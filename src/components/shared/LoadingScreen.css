@@ -1,0 +1,77 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background-color: var(--nuit-moghole);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 500ms ease-in-out;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ls-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ls-text {
+  font-size: 120px;
+  color: var(--saffron-moghole);
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .ls-text {
+    font-size: 80px;
+  }
+}
+
+.ls-m {
+  animation: mAppear 400ms ease-out forwards;
+}
+
+@keyframes mAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ls-letters {
+  display: flex;
+}
+
+.ls-char {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.ls-letters.show .ls-char {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms ease-out;
+}
+
+.ls-line {
+  width: 0;
+  height: 1px;
+  background-color: var(--saffron-moghole);
+  margin-top: 16px;
+  transition: width 600ms linear;
+}
+
+.ls-line.draw {
+  width: 60px;
+}

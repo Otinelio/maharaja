@@ -1,0 +1,155 @@
+.contact-page {
+  padding: 80px 0;
+  min-height: calc(100vh - 72px - 64px);
+}
+
+.contact-container {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.contact-container.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-title {
+  font-size: 40px;
+  color: var(--saffron-moghole);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 56px;
+    text-align: left;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: stretch;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ci-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  color: var(--ivoire-tandoor);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ci-icon {
+  color: var(--saffron-moghole);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ci-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  width: fit-content;
+}
+
+.status-badge.open {
+  background-color: #25D366;
+}
+
+.status-badge.closed {
+  background-color: var(--rajput-cramoisi);
+}
+
+.contact-wa {
+  height: 52px;
+  background-color: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  transition: opacity 200ms;
+}
+
+@media (min-width: 768px) {
+  .contact-wa {
+    width: fit-content;
+    padding: 0 32px;
+  }
+}
+
+.contact-wa:hover {
+  opacity: 0.9;
+}
+
+.contact-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.cs-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(245, 237, 214, 0.8);
+  font-size: 15px;
+  transition: color 200ms;
+}
+
+.cs-link:hover {
+  color: var(--saffron-moghole);
+}
+
+.contact-map {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .contact-map {
+    height: 100%;
+    min-height: 400px;
+  }
+}
+
+.contact-map iframe {
+  filter: grayscale(80%) invert(90%) hue-rotate(180deg) contrast(1.1);
+}

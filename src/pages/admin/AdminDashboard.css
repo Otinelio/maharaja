@@ -1,0 +1,293 @@
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ivoire-tandoor);
+}
+
+.admin-login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--nuit-moghole);
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.admin-input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--cendre-imperiale);
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: var(--nuit-moghole);
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: var(--saffron-moghole);
+}
+
+.admin-btn {
+  background-color: var(--nuit-moghole);
+  color: var(--saffron-moghole);
+  height: 44px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 200ms;
+}
+
+.admin-btn:hover {
+  opacity: 0.9;
+}
+
+.admin-btn-outline {
+  background-color: transparent;
+  color: var(--nuit-moghole);
+  border: 1px solid var(--nuit-moghole);
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 200ms, color 200ms;
+}
+
+.admin-btn-outline:hover {
+  background-color: var(--nuit-moghole);
+  color: var(--ivoire-tandoor);
+}
+
+.admin-btn-outline.danger {
+  color: var(--rajput-cramoisi);
+  border-color: var(--rajput-cramoisi);
+}
+
+.admin-btn-outline.danger:hover {
+  background-color: var(--rajput-cramoisi);
+  color: #fff;
+}
+
+/* DASHBOARD */
+.admin-dashboard {
+  min-height: 100vh;
+  background-color: var(--ivoire-tandoor);
+  color: var(--nuit-moghole);
+}
+
+.admin-header {
+  height: 64px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.admin-tabs {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0 24px;
+  overflow-x: auto;
+}
+
+.admin-tab {
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(18, 13, 7, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid transparent;
+  transition: color 200ms, border-color 200ms;
+}
+
+.admin-tab:hover {
+  color: var(--nuit-moghole);
+}
+
+.admin-tab.active {
+  color: var(--saffron-moghole);
+  border-bottom-color: var(--saffron-moghole);
+}
+
+.admin-content {
+  padding: 32px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.admin-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-section-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.admin-category-group {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+}
+
+.admin-category-group h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--saffron-moghole);
+}
+
+.admin-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-item-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.admin-item-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.admin-item-info {
+  flex: 1;
+}
+
+.admin-item-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.admin-item-price {
+  font-size: 14px;
+  color: rgba(18, 13, 7, 0.6);
+}
+
+.admin-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.admin-icon-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nuit-moghole);
+  background-color: rgba(0,0,0,0.05);
+  transition: background-color 200ms;
+}
+
+.admin-icon-btn:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.admin-icon-btn.danger {
+  color: var(--rajput-cramoisi);
+}
+
+.admin-icon-btn.danger:hover {
+  background-color: rgba(139, 26, 47, 0.1);
+}
+
+.admin-form {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(18, 13, 7, 0.7);
+}
+
+.admin-note {
+  font-size: 14px;
+  background-color: #fff;
+  padding: 16px;
+  border-left: 4px solid var(--saffron-moghole);
+  border-radius: 4px;
+}
+
+.admin-export-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.admin-json-preview {
+  height: 300px;
+  font-family: monospace;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 16px;
+  resize: vertical;
+}

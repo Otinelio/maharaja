@@ -1,0 +1,80 @@
+.table-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(18, 13, 7, 0.97); /* Nuit Moghole 97% */
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.table-modal {
+  background-color: var(--nuit-moghole);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeInScale 300ms ease-out;
+}
+
+.table-modal-icon {
+  color: var(--saffron-moghole);
+  margin-bottom: 24px;
+}
+
+.table-modal-title {
+  font-size: 32px;
+  color: var(--ivoire-tandoor);
+  margin-bottom: 8px;
+}
+
+.table-modal-subtitle {
+  font-size: 14px;
+  color: rgba(245, 237, 214, 0.6);
+  margin-bottom: 32px;
+}
+
+.table-modal-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.table-modal-input {
+  height: 52px;
+  background-color: var(--cendre-imperiale);
+  border: 1px solid var(--saffron-moghole);
+  color: var(--ivoire-tandoor);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.table-modal-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.3);
+}
+
+.table-modal-input::placeholder {
+  color: rgba(245, 237, 214, 0.3);
+}
+
+.table-modal-submit {
+  height: 52px;
+  background-color: var(--saffron-moghole);
+  color: var(--nuit-moghole);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+  transition: opacity 200ms;
+}
+
+.table-modal-submit:hover {
+  opacity: 0.9;
+}

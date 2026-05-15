@@ -1,0 +1,48 @@
+.category-nav {
+  position: sticky;
+  top: 72px; /* Top offset for desktop */
+  background-color: var(--nuit-moghole);
+  border-bottom: 1px solid var(--cendre-imperiale);
+  z-index: 40;
+  padding: 12px 0;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .category-nav {
+    top: 0;
+  }
+}
+
+.cat-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 0 20px;
+  /* Hide scrollbar */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.cat-list::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-pill {
+  white-space: nowrap;
+  background-color: var(--cendre-imperiale);
+  color: rgba(245, 237, 214, 0.6); /* ivoire-tandoor 60% */
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 200ms ease, color 200ms ease;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.cat-pill.active {
+  background-color: var(--saffron-moghole);
+  color: var(--nuit-moghole);
+  font-weight: 600;
+}
